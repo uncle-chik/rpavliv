@@ -119,10 +119,9 @@ color:#07485b;
 	background: linear-gradient(0deg, #db073d, #0d6986);
 	font-size:20px;
 	color:#ede5f4;
-	margin-left:150px;
 }
 .menu2 button:hover{
-color:#07485b;
+	color:#07485b;
 }
 
 footer a{
@@ -131,4 +130,8 @@ footer a{
 }
 .contact-me{
 	width:50%;
+}
+.menu2{  
+	margin:0 25% 0 25%;
+	width:75%;
 }
