@@ -1,79 +1,181 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>homework</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="main.css">
+		<link rel="icon" href="favicon-hi.png" type="image/x-icon">
+		<title>Roman Pavliv</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<nav>
-			<img class="logo" src="img/logo.png" alt="logo" >
-			<ul class="hmenu">
-				<li><a href="#"><button>Home</button></a></li>
-				<li><a href="#"><button class="education">Education</button></a></li>
-				<li><a href="#"><button class="skills">Skills</button></a></li>
-				<li><a href="#"><button>Work</button></a></li>
-				<li><a href="#"><button class="contact">Contact</button></a></li>
-			</ul>  
-		</nav>
-		<header>
-			<img src="img/header.jpg" alt="head_image" height=300 width=1250>
-		</header>
-		<nav>
-			<div class="menu2">
-				<a href="#"><button>HTML 5</button></a>
-				<a href="#"><button>CSS 3</button></a>
-				<a href="#"><button>JS</button></a>
+		<div class="container">
+			<div class="row">
+				<div class="navbar navbar-inverse navbar-fixed-top">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+								<span class="sr-only">Открыть навигацию<span>
+								<span class="icon-bar"><span>
+								<span class="icon-bar"><span>
+								<span class="icon-bar"><span>
+							</button>
+							<a class="navbar-brand"><img src="img/logo.png" alt="" height="30"></a>
+						</div>
+						<div class="collapse navbar-collapse" id="responsive-menu">
+							<ul class="nav navbar-nav">
+								<li><a href="#">Home</a></li>
+								<li><a href="#education">Education</a></li>
+								<li><a href="#">Skills</a></li>
+								<li><a href="#">Work</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>	
+					</div>
+				</div>
 			</div>
-		</nav>
-		<aside>
-			<form>
-				<fieldset>
-					<p>Contact form:</p>
-					<input class="input" type="text" id="user-name" name="user-name" value="" placeholder="Name">
-					<br>
-					<br>
-					<input class="input" type="email" id="user-email" name="user-email" value="" placeholder="Email">
-					<br>
-					<br>
-					<textarea name="user-message" placeholder="Message"></textarea>
-					<br>
-					<input type="submit" name="submit" value="Send message">
-				</fieldset>
-			</form>
-			
-			  
-		</aside>
-		<article>
-			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at ullamcorper nulla, quis vulputate leo. Integer tortor mauris, pharetra at nulla quis, porta maximus tellus. Aliquam sit amet elementum est. Nam in est quis libero pellentesque aliquam. Ut tempus diam justo, eget hendrerit erat vestibulum at. Nam erat ante, molestie quis felis </p>
-
-			<p>In eu lacinia nunc, vel rhoncus velit. Morbi facilisis nunc purus, eu blandit massa tristique a. Mauris luctus molestie lectus id tempus. Aenean sit amet varius massa. Duis elit eros, aliquet a vulputate a, cursus a dolor. Fusce efficitur elit eu risus tristique placerat id ac sapien. Curabitur </p>
-			<p>In eu lacinia nunc, vel rhoncus velit. Morbi facilisis nunc purus, eu blandit massa tristique a. Mauris luctus molestie lectus id tempus. Aenean sit amet varius massa. Duis elit eros, aliquet a vulputate a, cursus a dolor. Fusce efficitur elit eu risus tristique placerat id ac sapien. Curabitur </p>
-			<p>In eu lacinia nunc, vel rhoncus velit. Morbi facilisis nunc purus, eu blandit massa tristique a. Mauris luctus molestie lectus id tempus. Aenean sit amet varius massa. Duis elit eros, aliquet a vulputate a, cursus a dolor. Fusce efficitur elit eu risus tristique placerat id ac sapien. Curabitur </p>
+		</div>
+		<div id="carousel" class="carousel slide">
+			<!--Індикатори слайдів-->
+			<ol class="carousel-indicators">
+				<li class="active" data-target="#carousel" data-slide-to="0"></li>
+				<li data-target="#carousel" data-slide-to="1"></li>
+				<li data-target="#carousel" data-slide-to="2"></li>
+			</ol>
+			<!--Cлайди-->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="img/xz.jpg" alt="">
+					<div class="carousel-caption">
+						<h4>Web Development</h4>
+						<h4>For You</h4>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/b.jpg" alt="">
+					<div class="carousel-caption">
+						<h4>Web Development</h4>
+						<h4>For You</h4>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/lamp.jpg" alt="">
+					<div class="carousel-caption">
+						<h4>Web Development</h4>
+						<h4>For You</h4>
+					</div>
+				</div>
+			</div>
+			<!--Стрілки переміщення слайдів-->
+			<a href="#carousel" class="left carousel-control" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"
+			</a>
+			<a href="#carousel" class="right carousel-control" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"
+			</a>
+		</div>	
+		<div class="row_1">
+			<div class="container">
+				<div id="menuBall2" class="menuBall">
+					<a href="#" class="ball redball">
+					<div class="menuText">
+						Up
+					</div></a>
+				</div>
+				<p class="title1">Неllo on my site!</p>
+				<img src="img/me.png">
+				<p class="title2">Responsible for project development and management, recognized as responsible and solution finder among colleagues, management and clients. Organized, hard-working, can find solution and resolve problem quickly even without assistance I thrive in a challenging environment and am a strong believer that thorough communication, attention to detail and possessing a positive attitude are vital keys to success. Leader by nature, willing to bring my knowledge and energy to my new employer.</p>
+			</div>
+		</div>
+		<div class="line"></div>
+		<article class="row_7 some-information"> 
+			<ul class="personal-details">
+				<h4>Personal Details:</h4>
+				<li>First name: Roman</li>
+				<li>Last name: Pavliv</li>
+				<li>Date of birth: 03 January 1991</li>
+				<li> Nationality: Ukrainian</li>
+				<li>Marital status: Married</li>
+			</ul>
+			<ul class="education" id="education"> 
+				<h4>Education:</h4>
+				<li>since 03.2016 by now - student in IT academy "SoftSorve"</li>
+				<li>2008 - 2012 - student of Ivan Franko National University of Lviv</li>
+				<li>2014 - courses in " computer training " and the qualification of the operator PC</li>
+			</ul>
+			<hr>
+			<ul class="skills"> 
+				<h4>Additional Skills:</h4>
+				<li>Languages: Ukrainian - easy<br> Russian - easy<br>English - Intermediate</li>
+				<li>Computer skills: HTML5, CSS3, JavaScript, Windows</li>
+			</ul>
+			<ul class="experience">	 
+				<h4>Professional Experience:</h4>
+				<li>2011 - 2012 - assistant director at the company "Retro-Project"</li>
+				<li>2012 - 2015 - representative of Vodafone Information Center </li>
+				<li>Driving Licence: Driving Licence Category "B"</li>
+			</ul>
 		</article>
-		
-		<footer>
-			<div class="contact-me">Contact info
-						<br>
-				Address:	Trakt Hlynyansky, 161a/2, Lviv
-						<br>
-				Phone:	+380 97-773-16-37
-						<br>
-				E-mail:	chicilinus@ukr.net
-						<br>
-				Skype:	uncle_chik
-						<br>
-				Website:	<a href="http://uncle-chik.github.io/rpavliv">http://uncle-chik.github.io/rpavliv</a>
+		<div class="line"></div>
+		<aside>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7278.177706716703!2d24.075189025912284!3d49.83824087296857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1460283549400" width="400" height="250" frameborder="0" style="border:0" class="maps" allowfullscreen></iframe>
+			<div class="contact-me">
+				<p>Contact me: </p>
 			</div>
-			<div class="icons">
-				<a href="https://www.facebook.com/profile.php?id=100006658144760"><i class="fa fa-facebook-official"></i></a>
-				<a href="http://ok.ru/"><i class="fa fa-odnoklassniki"></i></a>
-				<a href="http://www.skype.com/ru/"><i class="fa fa-skype"></i></a>
-				<a href="https://vk.com/"><i class="fa fa-vk"></i></a>
-				<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-				<a href="https://plus.google.com/collections/featured"><i class="fa fa-google-plus"></i></a>
+			<br>
+			<form class="form-inline">
+				<div class="form-group">
+					<label for="exampleInputName2">Name</label>
+					<input type="text" class="form-control" id="exampleInputName2" placeholder="Your name">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail2">Email</label>
+					<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Your e-mail">
+				</div>
+				<br>
+				<br>
+				<textarea class="form-control" rows="4" cols="52" placeholder="Your message"></textarea>
+				<br>
+				<br>
+				<button type="submit" class="btn btn-default">Send message</button>
+			</form>
+		</aside>
+		<div class="linear"></div>
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<ul class="social_icons clearfix">
+							<li><a href="#"><img src="img/follow_icon1.png" alt=""></a></li>
+							<li><a href="#"><img src="img/follow_icon2.png" alt=""></a></li>
+							<li><a href="#"><img src="img/follow_icon3.png" alt=""></a></li>
+							<li><a href="#"><img src="img/follow_icon4.png" alt=""></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 footerlogo">
+						<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="contact-me">
+							<p>Contact info<br>
+							Address:	Trakt Hlynyansky, 161a/2, Lviv<br>
+							Phone:	+380 97-773-16-37<br>
+							E-mail:	chicilinus@ukr.net<br>
+							Skype:	uncle_chik<br>
+							Website:	<a href="http://uncle-chik.github.io/rpavliv">http://uncle-chik.github.io/rpavliv</a></p>
+						</div>
+					</div>
+				</div>
 			</div>
-		</footer>
-	</body>	
-</html>	
+		</footer>	
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>
