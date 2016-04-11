@@ -9,6 +9,6 @@ $('#btn-send').click(function() {
         },
         dataType: "json"
     }).done(function() {
-        $('#container').html('<h1>thank you!</h1>')
+        $('#forms').html('<h1>thank you!</h1>')
     });
 });
