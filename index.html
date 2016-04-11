@@ -126,22 +126,22 @@
 				<p>Contact me: </p>
 			</div>
 			<br>
-			<form name="mailex" method="post" ectype="text/plain" 
+			<form id="sample" name="mailex" method="post" ectype="text/plain" 
 action="mailto:chicilinus@ukr.net" class="form-inline" id="form-inline">
 				<div class="form-group">
-					<label for="exampleInputName2">Name</label>
-					<input type="text" class="form-control" id="exampleInputName2" placeholder="Your name">
+					<label for="name">Name</label>
+					<input type="text" class="form-control" id="name" placeholder="Your name">
 				</div>
 				<div class="form-group">
-					<label for="exampleInputEmail2">Email</label>
-					<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Your e-mail">
+					<label for="email">Email</label>
+					<input type="email" class="form-control" id="email" placeholder="Your e-mail">
 				</div>
 				<br>
 				<br>
 				<textarea class="form-control" rows="4" cols="52" placeholder="Your message"></textarea>
 				<br>
 				<br>
-				<button type="submit" class="btn btn-default">Send message</button>
+				<button id="btn-send" type="submit" class="btn btn-default">Send message</button>
 			</form>
 		</aside>
 		<div class="linear"></div>
@@ -178,5 +178,6 @@ action="mailto:chicilinus@ukr.net" class="form-inline" id="form-inline">
 		<script src="js/bootstrap.js"></script>
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="index.js"></script>
 	</body>
 </html>
